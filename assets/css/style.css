@@ -1,0 +1,546 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+:root{
+	--Crna: #000;
+	--Braon: #663300;
+	--Providna:rgba(244,236,194,0.206);
+	--Bez:#D1B7A1;
+	
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style-type:none;
+}
+.cistac{
+	clear:both;
+}
+/* -------------------HEDER-------------------- */
+header{ 
+	background-color:var(--Bez);
+	display:flex;
+	justify-content:space-between;
+	
+} 
+.logo img{ 
+	width:100px; 
+	position:absolute;
+	top:3%;
+	left:5%;
+    
+} 
+nav{ 
+	 margin-left:45%;
+	 font-size:25px; 
+	 width:50%;
+	 padding:15px;
+} 
+header li{ 
+    display:inline;
+	font-family: 'Lalezar', cursive;
+}
+header li a{ 
+	 padding-left:60px; 
+	
+} 
+header li a:hover{ 
+	 color:var(--Braon); 
+} 
+header a{
+	 color:white; 	 
+} 
+/* ------------------------KRAJ HEDERA-------------------- */
+
+/* --------------------------POOZADINA------------------------ */
+.pozadina{ 
+	width:100%; 
+	height:700px; 
+    background-image:url("../img/proba.jpg"); 
+	background-size: cover; 
+	background-position: center; 
+	background-attachment: fixed; 
+	background-repeat: no-repeat; 
+
+} 
+@keyframes animacija {
+  from {left: -450px;}
+  to {left: 20px;}
+}
+ #naslov{ 
+	 width: 35%; 
+	 text-align: center; 
+	 position: absolute; 
+	 padding: 20px 0px; 
+	 top: 40%; 
+	 left:20px;
+	 animation: animacija 2s;
+	 animation-timing-function: ease;
+} 
+h1{ 
+	color:white; 
+	font-size: 100px; 
+	z-index:5; 
+	font-family: 'Lalezar', cursive;
+
+ } 
+ /* --------------------------KRAJ POOZADINE------------------------ */
+ 
+ /* --------------------------BLOK------------------------ */
+.naslov1{ 
+	margin: auto; 
+    width: 100%; 
+	text-align:center; 
+	top:20px; 
+	position:relative; 
+	font-family: 'Lalezar', cursive;
+	font-size:30px; 
+	color: var(--Braon);
+} 
+.drzac{ 
+	margin:auto; 
+	width:100%; 
+	height:300px; 
+	margin-top:40px;
+	border-radius: 8px; 
+	background-color:var(--Providna);
+	display:flex;
+	justify-content:space-around;
+	gap:20px;
+	
+ } 
+.slika1{ 
+	 
+	 height:100%; 
+	 width:30%;
+	 
+	
+} 
+.tekst1{ 
+	 height:80%; 
+	 width:63%;  
+     text-align:left; 
+	 font-family: 'Itim', cursive;
+	 color: var(--Crna);
+	 font-size:35px; 
+     margin-top:2%;
+ } 
+.slika1 img{ 
+      border-radius: 8px; 
+      width:100%;
+      height:100%;
+
+ } 
+ /* --------------------------KRAJ BLOKA------------------------ */
+ 
+ /* --------------------------SEKCIJA------------------------ */
+section{ 
+	width:100%; 
+	height:500px; 
+	display:flex;
+	justify-content:space-around;
+
+
+ } 
+.vest{ 
+     margin-top:2%; 
+     margin-left:1%; 
+	 height: 96%; 
+	 width: 30%; 
+	 text-align:center;
+
+
+} 
+.vestT{
+	 height:20%;
+	 width:100%;
+	
+}
+.vestS{
+	 height:70%;
+	
+}
+ .vest img{
+	 width:100%;
+	 height:100%;
+	 border-radius:8px;
+	 
+ }
+.vest img:hover{
+	-webkit-transform:scale(1.1);
+	transform:scale(1.05);
+}
+ .vest p{
+
+	 font-size:20px;
+}
+section h3{ 
+     text-align:center;
+	 color:var(--Braon);
+	 font-family: 'Lalezar', cursive;
+	 background-color:var(--Providna);
+	 font-size:30px;
+	 
+} 
+section p{ 
+	text-align:center; 
+	color: var(--white); 
+   	background-color:var(--Providna);
+	font-family: 'Itim', cursive;
+ } 
+ /* --------------------------KRAJ SEKCIJE------------------------ */
+ 
+ /* -------------------FORMA------------------ */
+#drzac3{
+	background-image:url("../img/formap.jpg"); 
+	background-size: cover; 
+    margin-top:3%;
+}
+#forma{
+	width:37%;
+	height:100%;
+	margin:auto;
+	background-color:rgb(102,51,0,0.609);
+}
+#forma form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#forma input,#forma textarea{
+	width:450px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid;
+	font-family: 'Itim', cursive;
+	
+}
+#forma label{
+	font-family: 'Itim', cursive;
+	color:White;
+}
+#forma #email{
+	width:450px;
+	font-family: 'Itim', cursive;
+}
+#forma textarea{
+	height:200px;
+	font-family: 'Itim', cursive;
+}
+.form{
+	margin-bottom:1%;
+}
+#forma #utisak{
+	background-color:var(--Zuta);
+	border: 1px solid var(--Braon);
+	padding: 10px;
+	font-family: 'Itim', cursive;
+}
+#forma #utisak:hover{
+	background-color:var(--Braon);
+	font-weight: 700;
+}
+/* ----------------KRAJ FORMA--------------- */
+
+/* --------------FUTER---------------- */
+footer{
+	margin-top:2%;
+	margin-bottom:0px;
+	background-color:var(--Bez);
+	font-size:20px;
+}
+footer p{
+	color:white;
+	padding:5px;
+	font-family: 'IBM Plex Mono', monospace;
+}
+footer a{
+	color:white;
+}
+.kontakt{
+	width:25%;
+	margin-top:2%;
+
+}
+.drzacf{
+	width:90%;
+	margin:auto;
+	display:flex;
+	justify-content:space-between;
+}
+.kontakt:nth-child(3){
+	text-align:right;
+} 
+.kontakt:nth-child(1){
+	text-align:left;
+} 
+.kontakt:nth-child(2){
+	text-align:center;
+} 
+.kontakt ul li{
+	font-size:20px;
+	padding:10px;
+	color:var(--White);
+	font-family: 'IBM Plex Mono', monospace;
+	
+}
+.kontakt li a:hover{ 
+	color:var(--Braon); 
+} 
+.kontakt i:hover{ 
+	color:var(--Braon); 
+} 
+.kontakt i{
+	padding:5px;
+	font-size:18px;
+}
+.kontakt h4{
+	font-size:30px;
+	color:var(--Braon);
+	font-family: 'Lalezar', cursive;
+}
+.mreze{
+    width:15%;
+	margin-left:45%;
+
+}
+.mreze i{
+	padding:5px;
+}
+.mreze i:hover{ 
+	color:var(--Braon); 
+}
+.kopirajt{
+	width:15%;
+	margin-left:45%;
+}
+/* ---------------------KRAJ FUTERA---------------------- */
+
+/* --------------------------GALERIJA------------------ */
+#galerija{
+	height:800px;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap: wrap;
+	text-align:center;
+}
+#gdrzac{
+	height:80%;
+	width:85%;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap: wrap;
+}
+article{
+	width:33%;
+	height:60%;
+	margin-top:2%;
+}
+.gslika{
+	width:100%;
+	height:80%;
+	
+}
+.gtekst{
+	height:20%;
+}
+.gslika img{
+	width:100%;
+	height:100%;
+	border-radius:8px;
+}
+.gtekst h2{
+	color:#663300;
+	font-family: 'Lalezar', cursive;
+	font-size:40px;
+}
+/* -----------------CENOVNIK------------- */
+.cenovnik{
+	width:100%;
+	background-color:var(--Providna);
+	
+}
+#krofnec{
+    width:90%;
+	margin:auto;
+	margin-top:2%;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	gap:20px;
+}
+hr{
+	width:79%;
+}
+.cena{
+	width:30%;
+	height:44%;
+	padding:15px;
+	
+}
+.cena h3{
+	font-size:25px;
+	color:var(--Braon);
+	font-family: 'Lalezar', cursive;
+}
+.cena p{
+	color:black;
+	font-size:20px;
+	 font-family: 'Itim', cursive;
+
+}
+.price{
+	height:100%;
+	width:20%;
+	float:right;
+	text-align:center;
+	z-index:10;
+}
+.price p{
+	padding-right:20px;
+	padding-top:23px;
+	color:black;
+	 font-family: 'Itim', cursive;
+}
+hr{
+	border: 1px solid #663300;
+}
+#napitci{
+	background-color:var(--Providna);
+	margin-top:2%;
+}
+#box{
+	width:80%;
+	height:100%;
+	margin:auto;
+    
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	
+}
+.topli{
+	width:20%;
+	height:80%;
+	margin-top:2%;
+}
+.topli img{
+	width:80%;
+	height:100%;
+	border-radius:50%;
+}
+#krofnecc{
+	width:90%;
+	margin:auto;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	gap:20px;
+}
+/* -----------------------O NAMA----------------- */
+#onama{
+    background-color:var(--Providna); 
+	margin-top:2%;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	
+}
+#onamas{
+	width:38%;
+    border-radius:8px;
+}
+#onamas img{
+	width:100%;
+	height:100%;
+	border-radius:8px;
+}
+#onamat{
+	width:50%;
+	height:90%;
+	color:black;
+	padding:20px;
+	font-size:24px;
+	 font-family: 'Itim', cursive;
+	text-align:left;
+}
+#drzacm{
+	height:600px;
+	margin-top:2%;
+	background-color:var(--Providna); 
+	display:flex;
+	justify-content:space-around;
+}
+#mapa{
+	margin:auto;
+	width:40%;
+	height:100%;
+}
+iframe{
+	width:100%;
+	height:100%;
+	border-radius:8px;
+}
+#adresa{
+	width:50%;
+	
+}
+#adresa p{
+	font-family: 'Itim', cursive;
+}
+#adresa h3{
+	font-family: 'Lalezar', cursive;
+	font-size:25px;
+	color:var(--Braon);
+}
+#lokal{
+	height:65%;
+	width:65%;
+}
+#lokal img{
+	width:100%;
+	height:100%;
+	border-radius:8px;
+}
+/* ---------------------------------AUTOR------------------ */
+#autor{
+	background-color:var(--Providna);
+	margin-top:2%;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+}
+#autorS{
+	width:20%;
+	height:100%;
+	border-radius:8px;
+}
+#autorS img{
+	width:100%;
+	height:100%;
+	border-radius:8px;
+	
+}
+#autorT{
+	width:50%;
+	height:100%;
+	text-align:center;
+	padding:20px;
+}
+#autorT p{
+	padding:9px;
+	font-family: 'IBM Plex Mono', monospace;
+	color:var(--Crna);
+	font-size:20px;
+}
+#autorT hr{
+	width:100%;
+	border: 1px solid var(--Braon);
+}
+#autorT h3{
+	font-family: 'Lalezar', cursive;
+	color:var(--Braon);
+	font-size:30px;
+}
